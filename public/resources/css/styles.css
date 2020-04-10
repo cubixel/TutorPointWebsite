@@ -2,16 +2,18 @@
 /* Recommend using https://fonts.google.com/specimen/Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* Navigation Bar */
+/* Universal */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
 }
+
+/* Navigation Bar */
 header {
   display: flex;
-  justify-content: flex-flex-end;
+  justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
 }
@@ -30,17 +32,23 @@ li, a, button {
 }
 .navlinks {
   list-style: none;
+  position: sticky;
+  top: 0;
 }
+
+/* List Items */
 .navlinks li {
   display: inline-block;
   padding: 0px 20px;
 }
-.navlinks li a {
-  transition: all 0.2s ease 0s;
+.navlinks li a, .dropbtn {
+  transition: all 0.2s ease;
 }
-.navlinks li a:hover {
+.navlinks li a:hover, .dropdown:hover .dropbtn {
   color: #EB4CE6
 }
+
+/* CTA Button */
 button {
   margin-left: 20px;
   padding: 9px 25px;
@@ -49,8 +57,34 @@ button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease;
 }
 button:hover {
   background-color: rgba(2,34,92,0.7);
+}
+
+/* Dropdown List Items */
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
