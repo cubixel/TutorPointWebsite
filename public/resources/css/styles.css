@@ -1,0 +1,56 @@
+/* Importing fonts for now, later we'd need to make them local */
+/* Recommend using https://fonts.google.com/specimen/Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Navigation Bar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+header {
+  display: flex;
+  justify-content: flex-flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #02225C;
+  text-decoration: none;
+}
+.logo {
+  cursor: pointer;
+  width: auto;
+  height: 70px;
+  margin-right: auto;
+}
+.navlinks {
+  list-style: none;
+}
+.navlinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.navlinks li a {
+  transition: all 0.2s ease 0s;
+}
+.navlinks li a:hover {
+  color: #EB4CE6
+}
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  color: #FFFFFF;
+  background-color: rgba(2,34,92,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+button:hover {
+  background-color: rgba(2,34,92,0.7);
+}
