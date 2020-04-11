@@ -7,24 +7,73 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
 }
 
-/* Navigation Bar */
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
+html, body {
+  height: 100%;
+  overflow: auto;
 }
-li, a, button {
+body {
+  background: url(../img/grey-background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #02225C;
   text-decoration: none;
 }
-.logo {
+section {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section h1 {
+  font-weight: 2500;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+section h2 {
+  font-weight: 1500;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+section p {
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 2500;
+  font-size: 12px;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+.navbar li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #02225C;
+  text-decoration: none;
+}
+.navbar .logo {
   cursor: pointer;
   width: auto;
   height: 70px;
@@ -34,9 +83,10 @@ li, a, button {
   list-style: none;
   position: sticky;
   top: 0;
+  background-color: #FFFFFF;
 }
 
-/* List Items */
+/* Navbar Items */
 .navlinks li {
   display: inline-block;
   padding: 0px 20px;
@@ -87,4 +137,24 @@ li.dropdown {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* This is going to be used to display files */
+.teamlineup {
+  text-align: center;
+  list-style: none;
+  justify-content: flex;
+}
+.teamlineup .polaroid {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FFFFFF;
+}
+.container p {
+  padding: 10px;
+  text-align: center;
+}
+.cardimg {
 }
