@@ -3,10 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Universal */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  --text-primary: #02225C;
+  --bg-primary: #FFFFFF;
 }
 
 html, body {
@@ -18,47 +20,46 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #02225C;
-  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-section {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+body::-webkit-scrollbar-thumb {
+  background: var(--text-primary);
+}
+main {
+  margin: 0 4rem;
+  color: var(--text-primary);
 }
 section h1 {
-  font-weight: 3500;
+  font-weight: bold;
   font-size: 42px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 section h2 {
-  font-weight: 1500;
+  font-weight: bold;
   font-size: 24px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 section p {
-  padding-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 10px;
 }
 footer {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
+  padding-top: 10px;
   text-align: center;
-  font-weight: 2500;
+  font-weight: bold;
   font-size: 12px;
+  color: var(--text-primary);
 }
 
 /* Navigation Bar */
 .navbar {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
   top: 0;
+  position: sticky;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -67,21 +68,18 @@ footer {
   background-color: #FFFFFF;
 }
 .navbar li, a, button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  color: #02225C;
+  font-weight: normal;
+  color: var(--text-primary);
   text-decoration: none;
 }
 .navbar .logo {
-  cursor: pointer;
   width: auto;
   height: 70px;
   margin-right: auto;
 }
 .navlinks {
   list-style: none;
-  position: sticky;
   top: 0;
   background-color: #FFFFFF;
 }
@@ -91,37 +89,32 @@ footer {
   display: inline-block;
   padding: 0px 20px;
 }
-.navlinks li a, .dropdownbutton {
+.navlinks li a, .dropdown-button {
   transition: all 0.2s ease;
 }
-.navlinks li a:hover, .dropdown:hover .dropdownbutton {
+.navlinks li a:hover, .dropdown:hover .dropdown-button {
   color: #EB4CE6
 }
 
 /* Dropdown List Items */
-.navlinks li.dropdown {
-  display: inline-block;
-}
-.dropdowncontent {
+.dropdown-content {
+  padding: 0;
   display: none;
   position: absolute;
   background-color: #F9F9F9;
-  min-width: 160px;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdowncontent a {
+.dropdown-content a {
   padding: 12px 16px;
   display: block;
   text-align: left;
 }
-.dropdowncontent li {
-  padding: 0px;
-}
-.dropdown:hover .dropdowncontent {
+.dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdowncontent a:hover {
+.dropdown-content a:hover {
   background-color: #F1F1F1;
 }
 
