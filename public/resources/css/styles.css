@@ -132,13 +132,16 @@ button:hover {
 }
 
 /* Container Classes */
-.cardcontainer {
+.flexbox {
   list-style: none;
   width: 100vw;
   height: auto;
-  text-align: center;
   margin: 0;
   padding: 0;
+  /* Resize Behaviour */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Cards */
@@ -152,8 +155,7 @@ button:hover {
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  /* Layout */
-  display: inline-block;
+  text-align: center;
   overflow: hidden;
 }
 .card img {
@@ -168,11 +170,8 @@ button:hover {
   align-items: center;
   width: auto;
   height: 20%;
-  margin: -4px 10px;
-}
-.caption p {
-  padding: 0px;
-  margin: 0px;
+  padding: 5px 10px;
+  transform: translateY(-10px);
 }
 .card:hover {
   transform: scale(1.05);
