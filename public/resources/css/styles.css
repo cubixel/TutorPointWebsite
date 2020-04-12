@@ -62,7 +62,7 @@ footer {
   align-items: center;
   padding: 6px 10%;
   z-index: 1;
-  background-color: #FFFFFF;
+  background-image: linear-gradient(#F9F9F9, white);
 }
 .navbar li, a, button {
   font-size: 16px;
@@ -78,7 +78,6 @@ footer {
 .navlinks {
   list-style: none;
   top: 0;
-  background-color: #FFFFFF;
 }
 
 /* Navigation Bar Items */
@@ -141,7 +140,8 @@ button:hover {
   /* Resize Behaviour */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* Default content to left */
+  justify-content: flex-start;
 }
 
 /* Cards */
@@ -176,4 +176,58 @@ button:hover {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 16px 7px rgba(0,0,0,0.2);
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 595px;
+  height: 842px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 0px 20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #F9F9F9;
+  color: var(--text-primary);
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: white;
+  color: var(--text-primary);
+  transform: rotateY(180deg);
+}
+.flip-box .pdf {
+  width: 100%;
+  height: 100%;
 }
