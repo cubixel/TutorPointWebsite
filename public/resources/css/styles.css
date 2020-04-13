@@ -212,12 +212,12 @@ button:hover {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
 }
 
 /* Style the front side */
 .flip-box-front {
-  background-color: #F9F9F9;
+  background-image: linear-gradient(to bottom right, #FAFAFA, #F0F0F0);
   color: var(--text-primary);
 }
 
