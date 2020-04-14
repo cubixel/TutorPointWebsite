@@ -1,3 +1,7 @@
 
 # Ignore OSX Files.
 *.DS_Store
+
+# Ignore JetBrians.
+*.xml
+*.iml

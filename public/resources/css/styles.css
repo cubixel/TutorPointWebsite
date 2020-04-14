@@ -16,10 +16,8 @@ html, body {
   overflow: auto;
 }
 body {
-  background: url(../img/bg.jpg);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../img/bg.jpg) no-repeat center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -46,7 +44,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-top: 10px;
+  margin: 20px 0;
   text-align: center;
   font-weight: bold;
   font-size: 12px;
@@ -99,11 +97,11 @@ footer {
   position: absolute;
   background-color: #F9F9F9;
   min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   transform: translateX(-50px);
 }
-.dropdown-content a {
+.dropdown-content li {
   padding: 12px 16px;
   display: block;
   text-align: left;
@@ -111,7 +109,7 @@ footer {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown-content a:hover {
+.dropdown-content li:hover {
   background-color: #F1F1F1;
 }
 
@@ -184,7 +182,7 @@ button:hover {
   width: 595px;
   height: 842px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 /* This container is needed to position the front and back side */
