@@ -8,7 +8,7 @@
   <meta name="description" content="CUBIXEL HTML tour about page.">
   <meta name="viewport" content="width=device-width, initial-scale=1,
     shrink-to-fit=no">
-  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <main>
@@ -75,36 +75,41 @@
     <section>
       <h2>MEET THE TEAM . . .</h2>
     </section>
+
+    <div id="overlay" onclick="off()">
+      <embed id="overlay-content" src="os.html"  width="500" height="800">
+    </div>
+
     <ul class="flexbox" style="justify-content: center;">
-      <li class="card">
-        <img src="./resources/img/team/os1.jpeg" alt="olivers">
+      <li class="card" onclick="on()">
+        <img src="./resources/img/team/os2.jpeg" alt="olivers">
         <div class="caption"><p><b>Oliver Still</b><br><i>Project Manager</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/oc.jpeg" alt="oliverc">
         <div class="caption"><p><b>Oliver Clarke</b><br><i>Finance Manager</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/coolguy1.jpeg" alt="cameron">
         <div class="caption"><p><b>Cameron Smith</b><br><i>Marketing Manager / QA Manager</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/jg.jpg" alt="james">
         <div class="caption"><p><b>James Gardner</b><br><i>Technical Manager / QA Manager</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/coolguy1.jpeg" alt="che">
         <div class="caption"><p><b>Che McKirgan</b><br><i>Technical Manager / Test Engineer</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/coolguy1.jpeg" alt="stijn">
         <div class="caption"><p><b>Stijn Marynissen</b><br><i>Design & Specification Manager</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/coolguy1.jpeg" alt="daniel">
         <div class="caption"><p><b>Daniel Bishop</b><br><i>Testing & Integration Manager</i></p></div>
       </li>
-      <li class="card">
+      <li class="card" onclick="on()">
         <img src="./resources/img/team/coolguy1.jpeg" alt="eric">
         <div class="caption"><p><b>Eric Walker</b><br><i>Software Architect / Test Engineer</i></p></div>
       </li>
@@ -113,5 +118,14 @@
 
   <footer>© CUBIXEL 2020</footer>
 
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
 </body>
 </html>
