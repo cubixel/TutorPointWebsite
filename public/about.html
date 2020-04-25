@@ -10,36 +10,39 @@
     shrink-to-fit=no">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
+
+  <!--  Navigation Bar  -->
+  <header class="navbar">
+    <img class="logo" src="./resources/img/logo/cubixel_navlogo.png" alt="navlogo">
+    <nav>
+      <ul class="navlinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html" style="color: #EB4CE6;">About Us</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-button">TutorPoint</a>
+          <ul class="dropdown-content">
+            <li><a href="./tutorpoint.html" >What is TutorPoint?</a></li>
+            <li><a href="./tutorpointdev.html">Development</a></li>
+            <li><a href="./tutorpointfam.html">Finance & Marketing</a></li>
+            <li><a href="./tutorpointaccess.html">Apply for Early Access</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <a class="cta" href="#contact"><button>Contact</button></a>
+  </header>
+
+  <!--  Breadcrumb  -->
+  <ul class="breadcrumb">
+    <li><a href="./index.html">Home</a></li>
+    <li>About Us</li>
+  </ul>
+
+  <!--  Page Content  -->
   <main>
-    <!--  Navigation Bar  -->
-    <header class="navbar">
-      <img class="logo" src="./resources/img/logo/cubixel_navlogo.png" alt="navlogo">
-      <nav>
-        <ul class="navlinks">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html" style="color: #EB4CE6;">About Us</a></li>
-          <li><a href="#qamanual">QA Manual</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-button">TutorPoint</a>
-            <ul class="dropdown-content">
-              <li><a href="./tutorpoint.html">What is TutorPoint?</a></li>
-              <li><a href="#tutorpoint-features">Features</a></li>
-              <li><a href="#tutorpoint-access">Apply for Early Access</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <a class="cta" href="#contact"><button>Contact</button></a>
-    </header>
-
-    <!--  Breadcrumb  -->
-    <ul class="breadcrumb">
-      <li><a href="index.html">Home</a></li>
-      <li>About Us</li>
-    </ul>
-
-    <!--  Page Content  -->
     <section>
       <h1>ABOUT US</h1>
       <p>
@@ -101,8 +104,6 @@
         <img src="./resources/img/team/jg.jpg" alt="james">
         <div class="caption"><p><b>James Gardner</b><br><i>Technical Manager / QA Manager</i></p></div>
       </li>
-    </ul>
-    <ul class="flexbox" style="justify-content: center; padding: 0 15%; width: auto">
       <li class="card">
         <img src="./resources/img/team/coolguy1.jpeg" alt="che">
         <div class="caption"><p><b>Che McKirgan</b><br><i>Technical Manager / Test Engineer</i></p></div>
