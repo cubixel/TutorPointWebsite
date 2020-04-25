@@ -67,7 +67,7 @@ footer {
 .navbar li, a, button {
   font-size: 16px;
   font-weight: normal;
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
   text-decoration: none;
 }
 .navbar .logo {
@@ -242,13 +242,13 @@ button:hover {
 /* Style the front side */
 .flip-box-front {
   background-image: linear-gradient(to bottom right, #FAFAFA, #F0F0F0);
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
 }
 
 /* Style the back side */
 .flip-box-back {
   background-color: white;
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
   transform: rotateY(180deg);
 }
 .flip-box .pdf {
@@ -278,4 +278,42 @@ button:hover {
   font-size: 50px;
   color: white;
   transform: translate(-50%, -50%);
+}
+
+/* Collapsible container of text*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  border-radius: 0px;
+  margin: 10px 0px 0px 220px;
+  padding: 18px;
+  width: 1000px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+.collapsible-active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible-active:after {
+  content: "\2212";
+}
+/* Text within collapsible box parameters */
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  width: 964px;
+  margin: 0px 0px 0px 220px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
