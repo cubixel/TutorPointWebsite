@@ -24,7 +24,7 @@ body {
   color: var(--text-primary);
 }
 section {
-  margin: 0 4rem;
+  margin: 0 15%;
 }
 section h1 {
   font-weight: bold;
@@ -37,7 +37,6 @@ section h2 {
   padding: 10px 0;
 }
 section p {
-  padding-left: 10px;
 }
 footer {
   position: relative;
@@ -58,7 +57,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 6px 10%;
+  padding: 6px 15%;
   z-index: 5;
   background-image: linear-gradient(#F7F7F7, white);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
