@@ -7,7 +7,8 @@
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  --text-primary: #02225C;
+  --cubixel-navy: #02225C;
+  --cubixel-magenta: #EB4CE6;
   --bg-primary: #FFFFFF;
 }
 
@@ -16,15 +17,15 @@ html, body {
   overflow: auto;
 }
 body {
-  background: url(../img/bg.jpg) no-repeat center;
+  background: url(../../resources/img/bg.jpg) no-repeat center;
   background-size: cover;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
 }
 section {
-  margin: 0 4rem;
+  margin: 0 15%;
 }
 section h1 {
   font-weight: bold;
@@ -37,7 +38,7 @@ section h2 {
   padding: 10px 0;
 }
 section p {
-  padding-left: 10px;
+  padding-left: 2px;
 }
 footer {
   position: relative;
@@ -48,7 +49,7 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 12px;
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
 }
 
 /* Navigation Bar */
@@ -58,14 +59,15 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 6px 10%;
-  z-index: 1;
-  background-image: linear-gradient(#F9F9F9, white);
+  padding: 6px 15%;
+  z-index: 5;
+  background-image: linear-gradient(#F7F7F7, white);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .navbar li, a, button {
   font-size: 16px;
   font-weight: normal;
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
   text-decoration: none;
 }
 .navbar .logo {
@@ -87,7 +89,7 @@ footer {
   transition: all 0.2s ease;
 }
 .navlinks li a:hover, .dropdown:hover .dropdown-button {
-  color: #EB4CE6;
+  color: var(--cubixel-magenta);
 }
 
 /* Dropdown List Items */
@@ -128,6 +130,29 @@ button:hover {
   background-color: rgba(2,34,92,0.7);
 }
 
+/* Breadcrumb */
+.breadcrumb {
+  padding: 20px 15%;
+  list-style: none;
+  background-color: whitesmoke;
+  margin-top: 0px;
+}
+.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+.breadcrumb li+li:before {
+  padding: 15px;
+  content: ">\00a0";
+}
+.breadcrumb li a {
+  color: var(--cubixel-navy);
+  transition: all 0.2s ease;
+}
+.breadcrumb li a:hover {
+  color: var(--cubixel-magenta);
+}
+
 /* Container Classes */
 .flexbox {
   list-style: none;
@@ -147,7 +172,7 @@ button:hover {
   /* Shape */
   width: 210px;
   height: 350px;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 10px;
   /* Design */
   background-color: #FFFFFF;
@@ -158,7 +183,7 @@ button:hover {
   cursor: pointer;
 }
 .card img {
-  border-radius: 5px 5px 0 0;
+  border-radius: 2px 2px 0 0;
   width: 100%;
   height: 80%;
   object-fit: cover;
@@ -217,16 +242,78 @@ button:hover {
 /* Style the front side */
 .flip-box-front {
   background-image: linear-gradient(to bottom right, #FAFAFA, #F0F0F0);
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
 }
 
 /* Style the back side */
 .flip-box-back {
   background-color: white;
-  color: var(--text-primary);
+  color: var(--cubixel-navy);
   transform: rotateY(180deg);
 }
 .flip-box .pdf {
   width: 100%;
   height: 100%;
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* Collapsible container of text*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  border-radius: 0px;
+  margin: 10px 0px 0px 220px;
+  padding: 18px;
+  width: 1000px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+.collapsible-active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible-active:after {
+  content: "\2212";
+}
+/* Text within collapsible box parameters */
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  width: 964px;
+  margin: 0px 0px 0px 220px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
