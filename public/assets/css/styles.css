@@ -25,9 +25,9 @@ body {
   color: var(--cubixel-navy);
 }
 main {
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 -4px 8px -8px rgba(0,0,0,0.2);
   margin: 0;
-  padding: 0; */
+  padding: 10px;
 }
 section {
   margin: 0 15%;
@@ -35,12 +35,20 @@ section {
 section h1 {
   font-weight: bold;
   font-size: 42px;
-  padding: 10px 0;
+  padding: 20px 0;
+  margin: 0;
 }
 section h2 {
   font-weight: bold;
   font-size: 24px;
+  padding: 20px 0;
+  margin: 0;
+}
+section h3 {
+  font-weight: bold;
+  font-size: 16px;
   padding: 10px 0;
+  margin: 0;
 }
 section p {
   padding-left: 2px;
@@ -137,10 +145,10 @@ button:hover {
 
 /* Breadcrumb */
 .breadcrumb {
-  padding: 20px 15%;
+  padding: 15px 15%;
   list-style: none;
   background-color: whitesmoke;
-  margin-top: 0px;
+  margin: 0px;
 }
 .breadcrumb li {
   display: inline;
@@ -321,4 +329,11 @@ button:hover {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+#mailto {
+  transition: all 0.2s ease;
+}
+#mailto:hover {
+  color: var(--cubixel-magenta);
 }
