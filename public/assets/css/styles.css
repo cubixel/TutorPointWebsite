@@ -340,3 +340,14 @@ button:hover {
 #mailto:hover {
   color: var(--cubixel-magenta);
 }
+
+#infopanel {
+  flex: none;
+  width: 200px;
+  height: fit-content;
+  margin-top: 20px;
+  margin-right: 15%;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
