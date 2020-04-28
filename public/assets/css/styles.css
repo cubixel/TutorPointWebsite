@@ -355,16 +355,19 @@ button:hover {
 
 .row {
   display: flex;
+  transform: translateX(5%);
   flex-wrap: wrap;
-  margin: 0 0%;
+  margin: 0 0 0 0;
 }
 
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 30%;
-  margin: 0 3.5% 0 0;
+  margin: 0 2.7% 0 0;
 }
 
 .column img {
   vertical-align: middle;
+  margin-left: 10px;
+  margin: 0 0 5.5% 0;
 }
