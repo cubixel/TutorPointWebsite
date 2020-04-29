@@ -369,6 +369,7 @@ th {
 }
 td a {
   transition: all 0.2s ease;
+  text-decoration: underline;
 }
 td a:hover {
   color: var(--cubixel-magenta);
