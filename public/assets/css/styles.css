@@ -4,6 +4,7 @@
 
 /* Universal */
 :root {
+  box-sizing: border-box;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -218,6 +219,39 @@ button:hover {
   box-shadow: 0 4px 16px 7px rgba(0,0,0,0.2);
 }
 
+.fob {
+  /* Shape */
+  width: auto;
+  height: 70px;
+  border-radius: 2px;
+  margin: 10px;
+  /* Design */
+  background-color: #FFFFFF;
+  transition: 0.3s;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.fob img {
+  border-radius: 2px 0 0 2px;
+  width: 33%;
+  height: 70px;
+  object-fit: cover;
+}
+.fob .caption {
+  display: flex;
+  width: 66%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  /* transform: translateY(-10px); */
+}
+.fob:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
@@ -340,7 +374,6 @@ button:hover {
 #mailto:hover {
   color: var(--cubixel-magenta);
 }
-
 #infopanel {
   flex: none;
   width: 200px;
@@ -350,8 +383,9 @@ button:hover {
   background-color: whitesmoke;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-
-* {box-sizing: border-box;}
+#infopanel > h2, #infopanel > p {
+  padding-left: 10px;
+}
 
 .row {
   display: flex;
