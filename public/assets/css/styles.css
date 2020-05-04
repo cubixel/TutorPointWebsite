@@ -173,7 +173,7 @@ button:hover {
 /* Container Classes */
 .flexbox {
   list-style: none;
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -383,6 +383,7 @@ button:hover {
   background-color: whitesmoke;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 #infopanel > h2, #infopanel > p {
   padding-left: 10px;
 }
@@ -406,5 +407,29 @@ button:hover {
   margin: 0 0 5.5% 0;
 }
 
-
-
+table {
+  flex: none;
+  border-collapse: collapse;
+  width: 30%;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  height: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+td a {
+  transition: all 0.2s ease;
+  text-decoration: underline;
+}
+td a:hover {
+  color: var(--cubixel-magenta);
+}
+td:hover {
+  background-color: rgba(0,0,0,0.1);
+}
