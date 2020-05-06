@@ -16,6 +16,7 @@
 html, body {
   height: 100%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 body {
   background: url(../../resources/img/bg.jpg) no-repeat center;
