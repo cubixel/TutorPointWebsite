@@ -43,10 +43,11 @@
   </ul>
 
   <!--  Page Content  -->
-  <main>
+  <>
     <div class="flexbox" style="justify-content: center; flex-wrap: nowrap; align-content: stretch">
       <section style="margin-right: 50px; justify-content: center">
         <h1>Development</h1>
+        <button type="button" onclick="document.getElementById('t&i').scrollIntoView()" style="border-radius: 50px; transform: translateX(-8%)">Testing and Integration</button>
         <button type="button" onclick="document.getElementById('mins').scrollIntoView()" style="border-radius: 50px; transform: translateX(-8%)">Project Documentary</button>
         <p>
           Believe it or not, the TutorPoint product, and the features that it offers its user, did not
@@ -146,7 +147,30 @@
         <p>
           To be continued... e.g. Development and programming methodology (pair programming, user stories, TDD etc.)
         </p>
-        <h2 id="mins">Project Documentary</h2>
+        <h2 id="t&i">Testing and Integration</h2>
+        <p>
+          The CUBIXEL Test and Integration Plan for the development of the TutorPoint application provides an overview
+          of the TutorPoint product, detailing the areas of the product that are suitable for testing. The document
+          also provides an in depth view of the types of testing processes that are used, the tools required
+          for such processes, and the members of the CUBIXEL team responsible for overseeing these tests.
+          A plan for how contracted modules, developed by external teams, are tested and integrated
+          is also detailed in the document. The Test and Integration plan additionally details the full integration
+          testing process, documentation and fault reporting procedure.
+        </p>
+        <ul class="flexbox" style="margin-top: 50px; justify-content: center;">
+          <li class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img class="logo" src="./resources/img/logo/tutorpoint_logo1.png" style="width: 100px; box-shadow: none">
+                <h2>Testing and Integration Plan</h2>
+              </div>
+              <div class="flip-box-back">
+                <embed class="pdf" src="./resources/doc/tutorpoint/CUBIXEL%20TutorPoint%20Test%20and%20Integration%20Plan.pdf">
+              </div>
+            </div>
+          </li>
+        </ul>
+        <h2 id="mins" style="margin-top: 3%">Project Documentary</h2>
         <p>
           Throughout the development process, various development stages are documented in order to
           monitor progression, measure success rate, and highlight areas of improvement in the development methodology.
