@@ -144,6 +144,7 @@ button {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 button:hover {
   background-color: rgba(2,34,92,0.7);
 }
@@ -435,7 +436,7 @@ td:hover {
   background-color: rgba(0,0,0,0.1);
 }
 
-.fa {
+.media {
   padding: 10px;
   margin-left: 10px;
   font-size: 30px;
@@ -445,18 +446,22 @@ td:hover {
   border-radius: 20%;
 }
 
-.fa:hover {
+.media:hover {
   opacity: 0.7;
 }
 
 /* Facebook */
-.fa-facebook {
+.media-facebook {
+  width: 25px;
+  height: 25px;
   background: #3B5998;
   color: white;
 }
 
 /* Instagram */
-.fa-instagram {
+.media-instagram {
+  width: 25px;
+  height: 25px;
   background: #3f729b;
   color: white;
 }
