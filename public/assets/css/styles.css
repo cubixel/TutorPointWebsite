@@ -5,7 +5,7 @@
 /* Universal */
 :root {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   --cubixel-navy: #02225C;
@@ -57,6 +57,7 @@ section h3 {
 }
 section p {
   padding-left: 2px;
+  text-align: justify;
 }
 footer {
   position: relative;
@@ -433,4 +434,10 @@ td a:hover {
 }
 td:hover {
   background-color: rgba(0,0,0,0.1);
+}
+
+.vl {
+  border-left: 1px solid var(--cubixel-navy);
+  height: auto;
+  margin: 0 20px;
 }
