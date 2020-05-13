@@ -29,13 +29,13 @@ body {
 main {
   box-shadow: 0 -4px 8px -8px rgba(0,0,0,0.2);
   margin: 0;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 section {
   margin: 0 15%;
 }
 section img {
-  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  /*box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);*/
 }
 section h1 {
   font-weight: bold;
@@ -311,17 +311,11 @@ button:hover {
 
 /* Overlay */
 #overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 0;
 }
 
 #overlay-content {
