@@ -71,6 +71,10 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 12px;
+}
+footer a {
+  font-size: 12px;
+  text-decoration: none;
   color: var(--cubixel-navy);
 }
 
@@ -86,7 +90,7 @@ footer {
   background-image: linear-gradient(#F7F7F7, white);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.navbar li, a, button {
+.navbar li, header a, main a, button {
   font-size: 16px;
   font-weight: normal;
   color: var(--cubixel-navy);
