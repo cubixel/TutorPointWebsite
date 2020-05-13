@@ -114,6 +114,14 @@ footer {
   color: var(--cubixel-magenta);
 }
 
+.banner {
+  padding: 2%;
+  margin-bottom: -20px;
+  text-align: center;
+  color: var(--cubixel-navy);
+  font-size: 10px;
+}
+
 /* Dropdown List Items */
 .dropdown-content {
   padding: 0;
