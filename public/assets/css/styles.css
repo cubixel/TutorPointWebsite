@@ -90,7 +90,7 @@ footer a {
   background-image: linear-gradient(#F7F7F7, white);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.navbar li, header a, main a, button {
+.navbar li, header a, main a {
   font-size: 16px;
   font-weight: normal;
   color: var(--cubixel-navy);
@@ -151,6 +151,9 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 button:hover {
@@ -175,6 +178,9 @@ button:hover {
 .breadcrumb li a {
   color: var(--cubixel-navy);
   transition: all 0.2s ease;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
 }
 .breadcrumb li a:hover {
   color: var(--cubixel-magenta);
@@ -415,6 +421,7 @@ table {
   flex: none;
   border-collapse: collapse;
   width: 30%;
+  font-size: 16px;
 }
 th, td {
   padding: 10px;
@@ -430,6 +437,8 @@ th {
 td a {
   transition: all 0.2s ease;
   text-decoration: underline;
+  font-weight: normal;
+  color: var(--cubixel-navy);
 }
 td a:hover {
   color: var(--cubixel-magenta);
