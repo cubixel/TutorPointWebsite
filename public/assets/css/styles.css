@@ -79,6 +79,7 @@ footer {
 }
 footer a {
   font-size: 12px;
+  font-weight: bold;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * Navigation * * * * * * * * * * * * * * * * * * * * * * * * * * */
