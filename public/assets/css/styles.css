@@ -274,39 +274,46 @@ footer a {
 
 /* Accordion */
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: whitesmoke;
+  color: var(--cubixel-navy);
   cursor: pointer;
   border-radius: 0;
-  margin: 10px 0 0 220px;
+  margin: 10px 0 0 0px;
   padding: 18px;
-  width: 1000px;
+  width: 1010px;
   border: none;
   text-align: left;
   outline: none;
   font-size: 20px;
 }
 .collapsible-active, .collapsible:hover {
-  background-color: #555;
+  background-color: lightgrey;
 }
 .collapsible:after {
-  content: '\002B';
   color: white;
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 .collapsible-active:after {
   content: "\2212";
 }
 .content {
-  padding: 0 18px;
+  padding: 0 0;
   max-height: 0;
-  width: 964px;
-  margin: 0 0 0 220px;
+  width: 910px;
+  margin: 0 0 0 100px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+}
+
+.subcontent{
+  padding: 0 0;
+  max-height: 0;
+  width: 910px;
+  margin: 0 0 0 100px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* Table */
@@ -453,3 +460,4 @@ button:hover {
 #mailto:hover {
   color: var(--cubixel-magenta);
 }
+

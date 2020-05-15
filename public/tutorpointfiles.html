@@ -54,21 +54,38 @@
         the TutorPoint product. The purpose of the CUBIXEL file directory is to assist the University of York
         Department of Electronic Engineering in the marking procedure for the Software Engineering Project Assessment.
       </p>
-      <section>
-        <div class="flexbox" style="justify-content: space-evenly; transform: translateX(-50%); width: 155%; align-items: flex-start; margin-top: 30px">
-          <table>
-            <tr>
-              <td><img src="resources/img/icons/folder_icon.png" style="width: 20px; height: 20px; margin: 0px 10px -5px 0; box-shadow: none;"><a href="">Deliverables</a></td>
-            </tr>
-            <tr>
-              <td><img src="resources/img/icons/folder_icon.png" style="width: 20px; height: 20px; margin: 0px 10px -5px 0; box-shadow: none;"><a href="">Meeting Minutes</a></td>
-            </tr>
+
+      <button type="button" class="collapsible"><img src="resources/img/icons/folder_icon.png" style="width: 20px; height: 20px; margin: 0px 10px -5px 0; box-shadow: none;">Deliverables</button>
+      <div class="content">
+        <button type="button" class="collapsible"><img src="resources/img/icons/folder_icon.png" style="width: 20px; height: 20px; margin: 0px 10px -5px 0; box-shadow: none;">Company</button>
+        <div class="content">
+          <table style="width: fit-content">
+            <td><img src="resources/img/icons/doc_icon.png" style="width: 20px; height: 20px; margin: 0px 10px -5px 0; box-shadow: none;"><a href="" target="_blank">CUBIXEL Quality Assurance Manual</a></td>
           </table>
-      </section>
+        </div>
+        <button type="button" class="collapsible"><img src="resources/img/icons/folder_icon.png" style="width: 20px; height: 20px; margin: 0px 10px -5px 0; box-shadow: none;">Product</button>
+      </div>
     </section>
+
   </main>
 
   <footer>© CUBIXEL 2020 | Icons by <a target="_blank" href="https://icons8.com">Icons8</a></footer>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
