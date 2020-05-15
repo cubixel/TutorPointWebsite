@@ -452,12 +452,3 @@ button:hover {
 #mailto:hover {
   color: var(--cubixel-magenta);
 }
-
-/* Homepage Banner */
-.banner {
-  padding: 2%;
-  margin-bottom: -20px;
-  text-align: center;
-  color: var(--cubixel-navy);
-  font-size: 10px;
-}
