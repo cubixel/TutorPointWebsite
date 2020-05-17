@@ -144,7 +144,7 @@ footer a {
   padding: 15px 15%;
   list-style: none;
   background-color: whitesmoke;
-  margin: 0px;
+  margin: 0;
 }
 .breadcrumb li {
   display: inline;
@@ -293,7 +293,7 @@ footer a {
   color: white;
   font-weight: bold;
   float: right;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .collapsible-active:after {
   content: "\2212";
@@ -455,5 +455,13 @@ button:hover {
 }
 #mailto:hover {
   color: var(--cubixel-magenta);
+}
+
+/* Feature Animation */
+feature {
+  transition: 0.2s;
+}
+feature:hover {
+  transform: scale(1.1);
 }
 
