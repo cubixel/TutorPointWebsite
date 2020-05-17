@@ -278,7 +278,7 @@ footer a {
   color: var(--cubixel-navy);
   cursor: pointer;
   border-radius: 0;
-  margin: 10px 0 0 0px;
+  margin: 0;
   padding: 18px;
   width: 1010px;
   border: none;
@@ -299,21 +299,17 @@ footer a {
   content: "\2212";
 }
 .content {
-  padding: 0 0;
+  background-color: white;
   max-height: 0;
-  width: 910px;
-  margin: 0 0 0 100px;
+  width: 1010px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
-.subcontent{
-  padding: 0 0;
-  max-height: 0;
-  width: 910px;
-  margin: 0 0 0 100px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.content table {
+  width: 1010px;
+}
+.content td {
+  padding-left: 100px;
 }
 
 /* Table */
