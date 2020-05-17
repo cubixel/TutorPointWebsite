@@ -47,6 +47,105 @@
 
   <!--  Page Content  -->
   <main>
+
+    <!-- Overlays -->
+    <div class="overlay" onclick="osOff()" id="osOverlay">
+      <embed class="overlay-content" src="assets/html/ostutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function osOn() {
+            document.getElementById("osOverlay").style.display = "block";
+        }
+
+        function osOff() {
+            document.getElementById("osOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="ocOff()" id="ocOverlay">
+      <embed class="overlay-content" src="assets/html/octutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function ocOn() {
+            document.getElementById("ocOverlay").style.display = "block";
+        }
+
+        function ocOff() {
+            document.getElementById("ocOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="csOff()" id="csOverlay">
+      <embed class="overlay-content" src="assets/html/cstutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function csOn() {
+            document.getElementById("csOverlay").style.display = "block";
+        }
+
+        function csOff() {
+            document.getElementById("csOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="jgOff()" id="jgOverlay">
+      <embed class="overlay-content" src="assets/html/jgtutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function jgOn() {
+            document.getElementById("jgOverlay").style.display = "block";
+        }
+
+        function jgOff() {
+            document.getElementById("jgOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="cmOff()" id="cmOverlay">
+      <embed class="overlay-content" src="assets/html/cmtutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function cmOn() {
+            document.getElementById("cmOverlay").style.display = "block";
+        }
+
+        function cmOff() {
+            document.getElementById("cmOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="smOff()" id="smOverlay">
+      <embed class="overlay-content" src="assets/html/smtutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function smOn() {
+            document.getElementById("smOverlay").style.display = "block";
+        }
+
+        function smOff() {
+            document.getElementById("smOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="dbOff()" id="dbOverlay">
+      <embed class="overlay-content" src="assets/html/dbtutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function dbOn() {
+            document.getElementById("dbOverlay").style.display = "block";
+        }
+
+        function dbOff() {
+            document.getElementById("dbOverlay").style.display = "none";
+        }
+    </script>
+    <div class="overlay" onclick="ewOff()" id="ewOverlay">
+      <embed class="overlay-content" src="assets/html/ewtutorpoint.html" style="width: 60%; height: 80%;">
+    </div>
+    <script>
+        function ewOn() {
+            document.getElementById("ewOverlay").style.display = "block";
+        }
+
+        function ewOff() {
+            document.getElementById("ewOverlay").style.display = "none";
+        }
+    </script>
+
     <div class="flexbox" style="justify-content: center; flex-wrap: nowrap; align-content: stretch">
       <section style="margin-right: 50px; justify-content: center">
         <h1>Development</h1>
@@ -464,59 +563,59 @@
         <h2>Cost</h2>
         <p>£ 55,000.00</p>
         <h2>Hours</h2>
-        <p>1200+</p>
+        <p>1500+</p>
         <h2>Client</h2>
-        <p>Undisclosed</p>
+        <p>Dr. Stuart J. Porter</p>
         <h2>Team</h2>
         <div class="fob">
-          <a href="os.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="osOn()">
             <img src="./resources/img/team/os2.jpeg" alt="olivers">
             <div class="caption"><p style="font-size: 14px">Oliver Still</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="oc.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="ocOn()">
             <img src="./resources/img/team/oc.jpeg" alt="oliverc">
             <div class="caption"><p style="font-size: 14px">Oliver Clarke</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="cs.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="csOn()">
             <img src="./resources/img/team/cs.jpg" alt="cameron">
             <div class="caption"><p style="font-size: 14px">Cameron Smith</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="jg.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="jgOn()">
             <img src="./resources/img/team/jg.jpg" alt="james">
             <div class="caption"><p style="font-size: 14px">James Gardner</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="cm.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="cmOn()">
             <img src="./resources/img/team/cm.jpg" alt="che">
             <div class="caption"><p style="font-size: 14px">Che McKirgan</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="sm.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="smOn()">
             <img src="./resources/img/team/sm.jpg" alt="stijn">
             <div class="caption"><p style="font-size: 14px">Stijn Marynissen</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="db.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="dbOn()">
             <img src="./resources/img/team/db.jpg" alt="daniel">
             <div class="caption"><p style="font-size: 14px">Daniel Bishop</p></div>
-          </a>
+          </div>
         </div>
         <div class="fob">
-          <a href="ew.html" style="display: flex; justify-content: flex-start; align-items: center;">
+          <div style="display: flex; justify-content: flex-start; align-items: center;" onclick="ewOn()">
             <img src="./resources/img/team/ew.png" alt="eric">
             <div class="caption"><p style="font-size: 14px">Eric Walker</p></div>
-          </a>
+          </div>
         </div>
-        <h2 style="margin-left: 10px;">Services</h2>
+        <p style="font-size: 15px;">Click on a member to see breakdown of individual contributions and QA Metrics.</p>
       </div>
     </div>
   </main>
