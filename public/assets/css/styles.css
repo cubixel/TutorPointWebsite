@@ -451,13 +451,13 @@ button:hover {
 .media-facebook {
   width: 25px;
   height: 25px;
-  background: #3B5998;
+  background: var(--cubixel-navy);
   color: white;
 }
 .media-instagram {
   width: 25px;
   height: 25px;
-  background: #e26bde;
+  background: var(--cubixel-navy);
   color: white;
 }
 
