@@ -1,8 +1,9 @@
-/* Importing fonts for now, later we'd need to make them local */
-/* Recommend using https://fonts.google.com/specimen/Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * Global * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../resources/fonts/Montserrat-Regular.ttf");
+}
 
 :root {
   box-sizing: border-box;
