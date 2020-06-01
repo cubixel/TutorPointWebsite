@@ -145,6 +145,47 @@
             document.getElementById("ewOverlay").style.display = "none";
         }
     </script>
+      <section>
+          <style>
+              .popup {
+                  padding: 20px;
+                  background-color: var(--cubixel-navy);
+                  color: white;
+                  opacity: 1;
+                  transition: opacity 0.6s;
+                  margin-top: 15px;
+              }
+              .closebtn {
+                  margin-left: 15px;
+                  color: white;
+                  font-weight: bold;
+                  float: right;
+                  font-size: 40px;
+                  line-height: 20px;
+                  cursor: pointer;
+                  transition: 0.3s;
+              }
+              .closebtn:hover {
+                  color: var(--cubixel-magenta);
+              }
+          </style>
+          <div class="popup">
+              <span class="closebtn">&times;</span>
+              <strong>Note : </strong> Click team cards to see project contributions and QA metrics.
+          </div>
+      </section>
+      <script>
+          var close = document.getElementsByClassName("closebtn");
+          var i;
+
+          for (i = 0; i < close.length; i++) {
+              close[i].onclick = function(){
+                  var div = this.parentElement;
+                  div.style.opacity = "0";
+                  setTimeout(function(){ div.style.display = "none"; }, 600);
+              }
+          }
+      </script>
 
     <div class="flexbox" style="justify-content: center; flex-wrap: nowrap; align-content: stretch">
       <section style="margin-right: 50px; justify-content: center">
